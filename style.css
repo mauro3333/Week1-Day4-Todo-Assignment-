@@ -1,0 +1,150 @@
+
+body {
+    background-color: #036060;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-control {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+#list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+    margin: 20px;
+}
+
+#list li {
+    background-color: #ffd166;
+    color: white;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#list li:hover {
+    cursor: pointer;
+}
+
+/***********************************/
+.priorityLow p:nth-child(1) {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 2px;
+}
+
+.priorityLow p:nth-child(2) {
+    background-color: green;
+    padding: 4px;
+    width: 50px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.priorityLow p:nth-child(3) {
+    color: black;
+    margin: 2px;
+}
+
+/***********************************/
+.priorityHigh p:nth-child(1) {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 2px;
+}
+
+.priorityHigh p:nth-child(2) {
+    background-color: rgb(216, 10, 10);
+    padding: 4px;
+    width: 50px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.priorityHigh p:nth-child(3) {
+    color: black;
+    margin: 2px;
+}
+/***********************************/
+
+.form-control button {
+    background: #08c6c6;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.list-container {
+    height: calc(100vh - 100px);
+    overflow: auto;
+    margin-top: 60px;
+}
+
+.radio-control {
+    background: azure;
+    position: fixed;
+    bottom: 70px;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.radio-control label {
+    padding-left: 20%;
+}
+
+.date-container {
+    position: fixed;
+    bottom: 120px;
+    width: 100%;
+}
+
+.date-container input {
+    width: 100%;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input {
+    border: none;
+    padding: 20px;
+}
+
+
+.search-container {
+    position: fixed;
+    top: 0;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    width: 100%;
+}
+
+
+.search-container input {
+    padding: 20px;
+}
+
+.search-container button {
+    background: #e76f51;
+    border: none;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
